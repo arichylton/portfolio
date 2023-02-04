@@ -1,5 +1,11 @@
 .top__container {
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
-  font-size: var( --fz-xl);
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
 }
