@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  color: var(--lightest-slate);
+  font-size: var(--fz-lg);
+  font-family: var(--font-mono);
+  z-index: 12;
+  padding: 0 2rem;
+}
+
+.navbar__items-container {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__items-container li {
+  margin: 0 1.5rem;
+}
+
+.navbar__items-container li:hover {
+  color: #6f96d5;
+}
