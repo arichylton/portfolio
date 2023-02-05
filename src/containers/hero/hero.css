@@ -1,4 +1,4 @@
-.top__container {
+.hero__container {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -8,4 +8,9 @@
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
+}
+
+.hero__container div p {
+  margin: 20px 0px 0px;
+  max-width: 540px;
 }
