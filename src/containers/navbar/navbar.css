@@ -9,7 +9,7 @@
   width: 100%;
   z-index: 11;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(23, 28, 40, 0.85);
   backdrop-filter: blur(10px);
   transition: var(--transition);
   filter: none !important;
@@ -30,6 +30,7 @@
   font-family: var(--font-mono);
   counter-reset: item 0;
   z-index: 12;
+  font-size: var(--fz-md);
 }
 
 .logo {
@@ -42,8 +43,7 @@
 
 .logo a {
   color: var(--green);
-  width: 42px;
-  height: 42px;
+  width: 100%;
 }
 
 .navbar__items-container ul {
@@ -55,6 +55,7 @@
   padding: 0px;
   margin: 0px;
   list-style: none;
+  
 }
 
 .navbar__items-extra {
@@ -67,7 +68,7 @@
   margin: 0px 5px;
   position: relative;
   counter-increment: item 1;
-  font-size: var(--fz-xs);
+  
 }
 
 .navbar__items-container ul li a {

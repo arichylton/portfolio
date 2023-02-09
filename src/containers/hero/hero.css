@@ -10,7 +10,41 @@
   padding: 0px;
 }
 
-.hero__container div p {
-  margin: 20px 0px 0px;
-  max-width: 540px;
+.hero__container h1 {
+  margin: 0px 0px 30px 4px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 80px;
+  font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+  font-weight: 400;
 }
+
+.hero__container p {
+  margin: 20px 0px 0px;
+  max-width: 600px;
+}
+
+.hero__container h3 {
+  margin-top: 5px;
+  color: var(--slate);
+  font-size: 80px;
+  line-height: 0.9;
+  margin: 10px 0 20px 0;
+}
+
+.hero__container .email-link {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 50px;
+}
+
+

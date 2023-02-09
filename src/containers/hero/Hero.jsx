@@ -8,7 +8,7 @@ const Top = () => {
         <h1>Hi, my name is</h1>
       </div>
       <div>
-        <h2 className='big-heading'>Aric Hylton</h2>
+        <h2 className='big-heading'>Brittany Chiang.</h2>
       </div>
       <div>
         <h3 className='big-heading'>I build things for the web.</h3>
@@ -19,6 +19,9 @@ const Top = () => {
           designing) exceptional digital experiences. Currently, I’m focused on
           building accessible, human-centered products at Upstatement.
         </p>
+      </div>
+      <div>
+        <a className='email-link' href='!#' target='_blank' rel='noopener noreferrer'>Check out my course!</a>
       </div>
     </section>
   );
