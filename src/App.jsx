@@ -8,8 +8,8 @@ function App() {
       <Navbar />
       <main className='fillheight'>
         <Top />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
         <Footer />
       </main>

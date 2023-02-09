@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './hero.css';
 
+import githubImg from '../../assets/icons/github-original.svg';
+import linkedinImg from '../../assets/icons/linkedin-original.svg';
+
 const Top = () => {
   return (
     <section className='hero__container'>
@@ -8,7 +11,7 @@ const Top = () => {
         <h1>Hi, my name is</h1>
       </div>
       <div>
-        <h2 className='big-heading'>Brittany Chiang.</h2>
+        <h2 className='big-heading'>Aric Hylton.</h2>
       </div>
       <div>
         <h3 className='big-heading'>I build things for the web.</h3>
@@ -21,7 +24,30 @@ const Top = () => {
         </p>
       </div>
       <div>
-        <a className='email-link' href='!#' target='_blank' rel='noopener noreferrer'>Check out my course!</a>
+        <a
+          className='contact-link-github'
+          href='!#'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <img src={githubImg} />
+        </a>
+        <a
+          className='contact-link'
+          href='!#'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <img src={linkedinImg} />
+        </a>
+        <a
+          className='contact-link'
+          href='!#'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <img src={githubImg} />
+        </a>
       </div>
     </section>
   );

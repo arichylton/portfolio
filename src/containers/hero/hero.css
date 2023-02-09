@@ -27,24 +27,21 @@
 .hero__container h3 {
   margin-top: 5px;
   color: var(--slate);
-  font-size: 80px;
+  font-size: 75px;
   line-height: 0.9;
   margin: 10px 0 20px 0;
 }
 
-.hero__container .email-link {
-  color: var(--green);
-  background-color: transparent;
-  border: 1px solid var(--green);
-  border-radius: var(--border-radius);
-  padding: 1.25rem 1.75rem;
-  font-size: var(--fz-sm);
-  font-family: var(--font-mono);
-  line-height: 1;
-  text-decoration: none;
-  cursor: pointer;
-  transition: var(--transition);
-  margin-top: 50px;
+
+.contact-link-github {
+  width: 30px;
+  margin: 55px 12px 0px;
+  filter: invert(100%) brightness(150%)
+}
+
+.contact-link {
+  width: 30px;
+  margin: 55px 12px 0px;
 }
 
 
