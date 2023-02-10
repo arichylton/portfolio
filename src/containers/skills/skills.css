@@ -1,27 +1,38 @@
-.skill__section {
+.skills__section {
+  margin-bottom: 50px;
+  margin-right: 100px;
+  min-width: 500px;
+  
+}
+
+.skills__section > div > h2 {
+  margin-bottom: 30px;
 }
 
 .skills__title {
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 60px;
+  font-size: 30px;
+  margin-bottom: 70px;
 }
 
 .skills__title:after {
   display: block;
-  height: 2px;
+  height: 1px;
   background-color: rgb(16, 234, 250);
   content: '';
   width: 120px;
-  margin: 0 auto;
+  margin: 0;
   box-shadow: 0 1px 2px #444;
   margin-top: 18px;
+}
 
+.skills__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills__container img {
-  max-width: 70px;
-  margin: 15px 10px;
+  max-width: 55px;
+  margin: 15px 25px 15px 0px;
 }
 
 .skills__front-end {

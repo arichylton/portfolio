@@ -3,6 +3,7 @@ import './hero.css';
 
 import githubImg from '../../assets/icons/github-original.svg';
 import linkedinImg from '../../assets/icons/linkedin-original.svg';
+import resumeImg from '../../assets/icons/document-outline.svg';
 
 const Top = () => {
   return (
@@ -14,7 +15,7 @@ const Top = () => {
         <h2 className='big-heading'>Aric Hylton.</h2>
       </div>
       <div>
-        <h3 className='big-heading'>I build things for the web.</h3>
+        <h3 className='big-heading'>Software Developer.</h3>
       </div>
       <div>
         <p>
@@ -25,7 +26,7 @@ const Top = () => {
       </div>
       <div>
         <a
-          className='contact-link-github'
+          className='contact-link'
           href='!#'
           target='_blank'
           rel='noopener noreferrer'
@@ -41,12 +42,12 @@ const Top = () => {
           <img src={linkedinImg} />
         </a>
         <a
-          className='contact-link'
+          className='contact-link resume'
           href='!#'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <img src={githubImg} />
+          <img src={resumeImg} className='resume' />
         </a>
       </div>
     </section>
