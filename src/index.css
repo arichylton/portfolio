@@ -1,7 +1,7 @@
 :root {
   --dark-navy: #1F1F20;
   --navy: #171c28;
-  --light-navy: #567EBB;
+  --light-navy: rgb(34, 41, 59);
   --lightest-navy: #606D80;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --dark-slate: #495670;

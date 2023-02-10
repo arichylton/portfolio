@@ -41,14 +41,6 @@ const Top = () => {
         >
           <img src={linkedinImg} />
         </a>
-        <a
-          className='contact-link resume'
-          href='!#'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <img src={resumeImg} className='resume' />
-        </a>
       </div>
     </section>
   );

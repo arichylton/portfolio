@@ -20,13 +20,13 @@ import bootstrapImg from '../../assets/icons/bootstrap-original.svg';
 
 const Skills = () => {
   return (
-    <section>
+    <section className='skills__section'>
       <div className='skills__title'>
         <h1>Skills</h1>
       </div>
       <div className='skills__container'>
         <div>
-          <div className='skills__section'>
+          <div className='skills__section-group'>
             <div>
               <h2>Development</h2>
             </div>
@@ -48,7 +48,7 @@ const Skills = () => {
               <img src={unityImg} />
             </div>
           </div>
-          <div className='skills__section'>
+          <div className='skills__section-group'>
             <div>
               <h2>Design</h2>
             </div>
@@ -59,7 +59,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className='skills__section'>
+        <div className='skills__section-group'>
           <div>
             <h2>Tools</h2>
           </div>
