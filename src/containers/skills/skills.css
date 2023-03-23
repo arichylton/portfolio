@@ -1,5 +1,5 @@
 .skills__section {
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .skills__section-group {
@@ -13,7 +13,7 @@
 }
 
 .skills__title {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 70px;
 }
 

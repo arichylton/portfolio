@@ -5,6 +5,9 @@ import movielyImg from '../../assets/project-images/moviely.png';
 import powerImg from '../../assets/project-images/power.png';
 import weatherlyImg from '../../assets/project-images/weatherly.png';
 
+import githubImg from '../../assets/icons/github-original-link.svg';
+import websiteImg from '../../assets/icons/website.svg';
+
 const Projects = () => {
   return (
     <section>
@@ -34,9 +37,13 @@ const Projects = () => {
                 <li>MovieDB API</li>
                 <li>Netlify</li>
               </ul>
-              <div>
-                <a href='#'>IMG</a>
-                <a href='#'>IMG</a>
+              <div className='project-links'>
+                <a href='#'>
+                  <img src={githubImg} />
+                </a>
+                <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
+                  <img src={websiteImg} />
+                </a>
               </div>
             </div>
           </div>
@@ -44,7 +51,7 @@ const Projects = () => {
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
           >
-            <a>
+            <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
               <img src={movielyImg} />
             </a>
           </div>
@@ -71,9 +78,13 @@ const Projects = () => {
                 <li>VSC</li>
                 <li>Netlify</li>
               </ul>
-              <div>
-                <a href='#'>IMG</a>
-                <a href='#'>IMG</a>
+              <div className='project-links'>
+                <a href='#'>
+                  <img src={githubImg} />
+                </a>
+                <a href='#'>
+                  <img src={websiteImg} />
+                </a>
               </div>
             </div>
           </div>
@@ -92,8 +103,9 @@ const Projects = () => {
               </h3>
               <div className='project-description'>
                 <p>
-                  Weatherly was made using React and Redux. Utilizes the Dark Sky API to fetch weather data asynchronously based on a searched
-                  location in the United States.
+                  Weatherly was made using React and Redux. Utilizes the Dark
+                  Sky API to fetch weather data asynchronously based on a
+                  searched location in the United States.
                 </p>
               </div>
               <ul className='project-tech-list'>
@@ -103,9 +115,13 @@ const Projects = () => {
                 <li>Dark Sky API</li>
                 <li>Netlify</li>
               </ul>
-              <div>
-                <a href='#'>IMG</a>
-                <a href='#'>IMG</a>
+              <div className='project-links'>
+                <a href='#'>
+                  <img src={githubImg} />
+                </a>
+                <a href='#'>
+                  <img src={websiteImg} />
+                </a>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Top, Projects, Skills, Contact, Footer } from './containers';
+import { Navbar, Top, Projects, Skills, About, Contact, Footer } from './containers';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <main className='fillheight'>
         <Top />
+        <About />
         <Skills />
         <Projects />
         <Contact />

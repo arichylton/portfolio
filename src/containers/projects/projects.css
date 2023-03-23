@@ -1,6 +1,6 @@
 .projects__title {
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 70px;
 }
 
@@ -153,3 +153,40 @@ svg,
   scale: 1.02;
   cursor: pointer;
 }
+
+.featured-item:nth-of-type(2n + 1) .project-links {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-left: 0px;
+  margin-right: -10px;
+}
+
+.featured-item .project-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.project-links a {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.project-links a img {
+  height: auto;
+  width: 22px;
+  margin-top: -5px;
+}
+
+.project-links a img:hover {
+  scale: 130%;
+}
+
+
+
