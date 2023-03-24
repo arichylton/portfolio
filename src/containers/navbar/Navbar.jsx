@@ -25,7 +25,7 @@ const Navbar = () => {
               <a href='/#contact'>Contact</a>
             </li>
             <li>
-              <a href='/#resume'>Resume</a>
+              <a href='/#resume' className='resume-link'>Resume</a>
             </li>
           </ul>
         </div>

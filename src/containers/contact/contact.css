@@ -1,18 +1,37 @@
-.contact__title {
-  
-  text-align: center;
-  font-size: 26px;
-  margin-bottom: 70px;
-  margin-top: 240px;
+.contact__section {
+  display: flex;
+  justify-content:center;
 }
 
-.contact__title:after {
-  display: block;
-  height: 1px;
-  background-color: rgb(16, 234, 250);
-  content: '';
-  width: 120px;
-  margin: 0 auto;
-  box-shadow: 0 1px 2px #444;
-  margin-top: 18px;
+.contact__title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 120px;
+  margin-top: 280px;
+}
+
+.contact__title h1 {
+  margin-bottom: 30px;
+}
+
+
+.contact__summary {
+  font-size: 18px;
+  width: 600px;
+  line-height: 1.8rem;
+}
+
+.email__link {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 50px;
 }

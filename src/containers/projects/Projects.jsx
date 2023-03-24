@@ -4,6 +4,7 @@ import './projects.css';
 import movielyImg from '../../assets/project-images/moviely.png';
 import powerImg from '../../assets/project-images/power.png';
 import weatherlyImg from '../../assets/project-images/weatherly.png';
+import saigheadImg from '../../assets/project-images/saighead.jpg';
 
 import githubImg from '../../assets/icons/github-original-link.svg';
 import websiteImg from '../../assets/icons/website.svg';
@@ -53,6 +54,47 @@ const Projects = () => {
           >
             <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
               <img src={movielyImg} />
+            </a>
+          </div>
+        </li>
+        <li className='featured-item'>
+          <div className='project-content'>
+            <div>
+              <p className='project-overline'>Featured Project</p>
+              <h3 className='project-title'>
+                <a>Saighead</a>
+              </h3>
+              <div className='project-description'>
+                <p>
+                  Moviely utilizes a movie database api to show upcoming movies,
+                  featured movies, and the highest rated movies of all time.
+                  Moviely also allows users to search for movies and see
+                  individual movie details.
+                </p>
+              </div>
+              <ul className='project-tech-list'>
+                <li>Unity</li>
+                <li>C#</li>
+                <li>Express</li>
+                <li>Steam</li>
+                <li>Visual Studio</li>
+              </ul>
+              <div className='project-links'>
+                <a href='#'>
+                  <img src={githubImg} />
+                </a>
+                <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
+                  <img src={websiteImg} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
+            style={{ maxWidth: 700, display: 'block' }}
+          >
+            <a href='https://store.steampowered.com/app/1576020/Saighead/' target="_blank">
+              <img src={saigheadImg} />
             </a>
           </div>
         </li>

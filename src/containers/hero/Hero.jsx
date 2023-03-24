@@ -41,14 +41,14 @@ const Top = () => {
         >
           <img src={linkedinImg} />
         </a>
-        <a
+        {/* <a
           className='contact-link'
           href='!#'
           target='_blank'
           rel='noopener noreferrer'
         >
           <img src={resumeImg} />
-        </a>
+        </a> */}
       </div>
     </section>
   );

@@ -14,22 +14,22 @@ const About = () => {
         <div>
           <div className='about__section-summary'>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+              My name is Aric Hylton I have been working with computers my
+              entire life. I have been interested in coding since high school
+              and decided I would finally pursue a career in it.
             </p>
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital experiences at
-              Upstatement for a variety of clients.
+              My main experience is with JavaScript, React-Redux, HTML, CSS, and
+              Node.js. I'm constantly keeping up to date with new documentation
+              and enhancing my knowledge of current programming concepts. It's
+              important for me to be the best at what I do and strive to be the
+              hardest working developer that I can be.
             </p>
             <p>
-              I also recently launched a course that covers everything you need
-              to build a web app with the Spotify API using Node & React.
+              A few of my other hobbies are powerlifting, rock-climbing, and
+              pretty much anything outdoors. I like seeing a goal, mapping out
+              the process of getting to the end, and then tackling each problem
+              along the way.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>

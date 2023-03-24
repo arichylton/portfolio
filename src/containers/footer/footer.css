@@ -1,0 +1,27 @@
+.footer__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.footer__section p {
+  margin-block-end: .5em;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  list-style: None;
+  padding-inline-start: 0;
+}
+
+.footer_list li {
+  padding: 0 8px;
+}
+
+.footer_list li a img{
+  margin: 8px 5px 0;
+  width: 26px;
+}
