@@ -8,7 +8,6 @@ import resumeImg from '../../assets/icons/document-outline.svg';
 const Footer = () => {
   return (
     <footer className='footer__section'>
-      <p>Made with ❤️ by Aric Hylton @ 2023</p>
       <ul className='footer_list'>
         <li>
           <a>
@@ -26,6 +25,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
+      <p>Made with ❤️ by Aric Hylton @ 2023</p>
     </footer>
   );
 };

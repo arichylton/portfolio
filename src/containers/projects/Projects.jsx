@@ -6,6 +6,7 @@ import powerImg from '../../assets/project-images/power.png';
 import weatherlyImg from '../../assets/project-images/weatherly.png';
 import saigheadImg from '../../assets/project-images/saighead.jpg';
 
+import steamImg from '../../assets/icons/steam.svg';
 import githubImg from '../../assets/icons/github-original-link.svg';
 import websiteImg from '../../assets/icons/website.svg';
 
@@ -39,10 +40,13 @@ const Projects = () => {
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
-                <a href='#'>
+                <a href='https://github.com/arichylton/moviely' target='blank'>
                   <img src={githubImg} />
                 </a>
-                <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
+                <a
+                  href='https://ubiquitous-platypus-29d3a7.netlify.app/'
+                  target='blank'
+                >
                   <img src={websiteImg} />
                 </a>
               </div>
@@ -52,7 +56,10 @@ const Projects = () => {
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
           >
-            <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
+            <a
+              href='https://ubiquitous-platypus-29d3a7.netlify.app/'
+              target='blank'
+            >
               <img src={movielyImg} />
             </a>
           </div>
@@ -66,25 +73,25 @@ const Projects = () => {
               </h3>
               <div className='project-description'>
                 <p>
-                  Moviely utilizes a movie database api to show upcoming movies,
-                  featured movies, and the highest rated movies of all time.
-                  Moviely also allows users to search for movies and see
-                  individual movie details.
+                  Saighead is 2D single-player puzzle game developed by my
+                  brother and I. It was developed with C# utilizing the Unity
+                  engine to create all 100 puzzles. I was in charge of the
+                  development, design and direction of the game.
                 </p>
               </div>
               <ul className='project-tech-list'>
                 <li>Unity</li>
                 <li>C#</li>
-                <li>Express</li>
+                <li>Adobe</li>
                 <li>Steam</li>
                 <li>Visual Studio</li>
               </ul>
               <div className='project-links'>
-                <a href='#'>
-                  <img src={githubImg} />
-                </a>
-                <a href='https://ubiquitous-platypus-29d3a7.netlify.app/'>
-                  <img src={websiteImg} />
+                <a
+                  href='https://store.steampowered.com/app/1576020/Saighead/'
+                  target='blank'
+                >
+                  <img src={steamImg} />
                 </a>
               </div>
             </div>
@@ -93,8 +100,11 @@ const Projects = () => {
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
           >
-            <a href='https://store.steampowered.com/app/1576020/Saighead/' target="_blank">
-              <img src={saigheadImg} />
+            <a
+              href='https://store.steampowered.com/app/1576020/Saighead/'
+              target='_blank'
+            >
+              <img src={saigheadImg} className="saigheadIMG"/>
             </a>
           </div>
         </li>
@@ -109,8 +119,8 @@ const Projects = () => {
                 <p>
                   Need to find out your current wilks score? Look no further!
                   Power utilizes it's own api to allow users to track their
-                  wilks and fitness goals. Power was also built off react and
-                  uses various components to make it look great
+                  wilks and fitness goals. Power was also built off of react and
+                  uses various components to make it look great.
                 </p>
               </div>
               <ul className='project-tech-list'>
@@ -121,17 +131,17 @@ const Projects = () => {
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
-                <a href='#'>
+                <a href='#' target='blank'>
                   <img src={githubImg} />
                 </a>
-                <a href='#'>
+                <a href='#' target='blank'>
                   <img src={websiteImg} />
                 </a>
               </div>
             </div>
           </div>
           <div className='project-image'>
-            <a>
+            <a target='blank'>
               <img src={powerImg} />
             </a>
           </div>
@@ -158,17 +168,17 @@ const Projects = () => {
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
-                <a href='#'>
+                <a href='#' target='blank'>
                   <img src={githubImg} />
                 </a>
-                <a href='#'>
+                <a href='#' target='blank'>
                   <img src={websiteImg} />
                 </a>
               </div>
             </div>
           </div>
           <div className='project-image'>
-            <a>
+            <a target='blank'>
               <img src={weatherlyImg} />
             </a>
           </div>

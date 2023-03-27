@@ -3,11 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .footer__section p {
   margin-block-end: .5em;
+  margin-block-start: 0.1em;
 }
 
 .footer_list {
@@ -21,7 +22,7 @@
   padding: 0 8px;
 }
 
-.footer_list li a img{
-  margin: 8px 5px 0;
+.footer_list li a img {
+  margin: 5px 3px 0;
   width: 26px;
 }
