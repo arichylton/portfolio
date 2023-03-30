@@ -38,6 +38,10 @@
   margin: 15px 25px 15px 0px;
 }
 
+.skills__container img:hover {
+  scale: 1.4;
+}
+
 .skills__front-end {
   display: flex;
   justify-content: center;

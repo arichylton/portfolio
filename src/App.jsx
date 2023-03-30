@@ -1,8 +1,22 @@
 import React from 'react';
-import { Navbar, Top, Projects, Skills, About, Contact, Footer } from './containers';
+import { useEffect } from 'react';
+import {
+  Navbar,
+  Top,
+  Projects,
+  Skills,
+  About,
+  Contact,
+  Footer,
+} from './containers';
 import './App.css';
+import 'animate.css';
+import 'react-tooltip/dist/react-tooltip.css';
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, []);
   return (
     <div className='App'>
       <Navbar />

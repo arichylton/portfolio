@@ -7,8 +7,9 @@
 }
 
 .footer__section p {
-  margin-block-end: .5em;
+  margin-block-end: .3em;
   margin-block-start: 0.1em;
+  font-size: .9em;
 }
 
 .footer_list {
@@ -25,4 +26,9 @@
 .footer_list li a img {
   margin: 5px 3px 0;
   width: 26px;
+  cursor: pointer;
+}
+
+.footer_list li a img:hover {
+  scale: 1.2;
 }

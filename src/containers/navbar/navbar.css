@@ -46,39 +46,71 @@
   width: 100%;
 }
 
-.navbar__items-container ul {
+.navbar__items-container {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  padding: 0px;
-  margin-right: 0px;
   list-style: none;
-  
 }
 
-.navbar__items-extra {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+.nav__items-container * {
+  transition: all 0.35s ease;
+  box-sizing: border-box;
 }
 
-.navbar__items-extra ul li {
-  margin: 0px 5px;
+.navbar__items-container li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em .7em;
+  padding: 0;
+}
+
+.navbar__items-container-link{
+  padding: .5em .8em;
   position: relative;
-  counter-increment: item 1;
-  
+  text-decoration: none;
 }
 
-.navbar__items-container-link {
-  padding: 10px;
-  margin: 0 5px;
+.navbar__items-container-link:before,
+.navbar__items-container-link:after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
 }
 
-.navbar__items-container li:hover {
-  color: #6f96d5;
+.navbar__items-container-link:before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid var(--green);
+  border-right: 3px solid var(--green);
+  transform: translate(-100%, 50%);
 }
+
+.navbar__items-container-link:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid var(--green);
+  border-left: 3px solid var(--green);
+  transform: translate(100%, -50%)
+}
+
+.navbar__items-container-link:hover::before,
+.navbar__items-container-link:hover::after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.navbar__items-container-link:hover {
+  color:  var(--green);
+}
+
 
 .resume-link {
   color: var(--green);
@@ -86,7 +118,7 @@
   border: 1px solid var(--green);
   border-radius: var(--border-radius);
   margin-left: 13px;
-  padding: .9rem 1.2rem;
+  padding: 0.9rem 1.2rem;
   font-size: var(--fz-m);
   font-family: var(--font-mono);
   line-height: 1;
@@ -94,3 +126,11 @@
   cursor: pointer;
   transition: var(--transition);
 }
+
+.resume-link:hover {
+  padding: 0.65rem .8rem;
+  background-color: var(--green);
+  color: #fff;
+  text-shadow: 0px 1px 6px rgb(4, 16, 31);
+}
+

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 
+import resume from '../../assets/resume/AricHylton_Resume.pdf'
+
 const Navbar = () => {
   const [nameText, setNameText] = useState('Aric Hylton');
 
@@ -25,35 +27,33 @@ const Navbar = () => {
             {nameText}
           </a>
         </div>
-        <div className='navbar__items-container navbar_items-extra'>
-          <ul>
-            <li>
-              <a href='/#about' className='navbar__items-container-link'>
-                About
-              </a>
-            </li>
-            <li>
-              <a href='/#experience' className='navbar__items-container-link'>
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href='/#projects' className='navbar__items-container-link'>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href='/#contact' className='navbar__items-container-link'>
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href='/#resume' className='resume-link'>
-                Resume
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul className='navbar__items-container'>
+          <li>
+            <a href='/#about' className='navbar__items-container-link'>
+              About
+            </a>
+          </li>
+          <li>
+            <a href='/#skills' className='navbar__items-container-link'>
+               Skills
+            </a>
+          </li>
+          <li>
+            <a href='/#projects' className='navbar__items-container-link'>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href='/#contact' className='navbar__items-container-link'>
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href={resume} className='resume-link' target='_blank'>
+              Resume
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
   );

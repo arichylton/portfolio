@@ -4,6 +4,11 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-padding-top: 130px;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   width: 100%;
@@ -83,6 +88,8 @@ a {
   position: relative;
   transition: var(--transition);
 }
+
+
 
 li {
   text-align: -webkit-match-parent;

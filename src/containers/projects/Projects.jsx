@@ -1,5 +1,7 @@
 import React from 'react';
 import './projects.css';
+import { Tooltip } from 'react-tooltip';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import movielyImg from '../../assets/project-images/moviely.png';
 import powerImg from '../../assets/project-images/power.png';
@@ -12,12 +14,18 @@ import websiteImg from '../../assets/icons/website.svg';
 
 const Projects = () => {
   return (
-    <section>
-      <div className='projects__title'>
-        <h1>Projects</h1>
-      </div>
+    <section id='projects' className='anchor'>
+      <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true'>
+        <div className='projects__title'>
+          <h1>Projects</h1>
+        </div>
+      </AnimationOnScroll>
       <ul className='projects__featured-list'>
-        <li className='featured-item'>
+        <AnimationOnScroll
+          animateIn='animate__fadeIn'
+          animateOnce='true'
+          className='featured-item'
+        >
           <div className='project-content'>
             <div>
               <p className='project-overline'>Featured Project</p>
@@ -40,13 +48,22 @@ const Projects = () => {
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
-                <a href='https://github.com/arichylton/moviely' target='blank'>
+                <a
+                  href='https://github.com/arichylton/moviely'
+                  target='blank'
+                  data-tooltip-content='Github'
+                  data-tooltip-id='github-tooltip-project'
+                >
+                  <Tooltip id='github-tooltip-project' place='bottom' />
                   <img src={githubImg} />
                 </a>
                 <a
                   href='https://ubiquitous-platypus-29d3a7.netlify.app/'
                   target='blank'
+                  data-tooltip-content='Website'
+                  data-tooltip-id='website-tooltip-project'
                 >
+                  <Tooltip id='website-tooltip-project' place='bottom' />
                   <img src={websiteImg} />
                 </a>
               </div>
@@ -63,8 +80,12 @@ const Projects = () => {
               <img src={movielyImg} />
             </a>
           </div>
-        </li>
-        <li className='featured-item'>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn='animate__fadeIn'
+          animateOnce='true'
+          className='featured-item'
+        >
           <div className='project-content'>
             <div>
               <p className='project-overline'>Featured Project</p>
@@ -90,7 +111,10 @@ const Projects = () => {
                 <a
                   href='https://store.steampowered.com/app/1576020/Saighead/'
                   target='blank'
+                  data-tooltip-content='Steam Webpage'
+                  data-tooltip-id='steam-tooltip-project'
                 >
+                  <Tooltip id='steam-tooltip-project' place='bottom' />
                   <img src={steamImg} />
                 </a>
               </div>
@@ -104,11 +128,15 @@ const Projects = () => {
               href='https://store.steampowered.com/app/1576020/Saighead/'
               target='_blank'
             >
-              <img src={saigheadImg} className="saigheadIMG"/>
+              <img src={saigheadImg} className='saigheadIMG' />
             </a>
           </div>
-        </li>
-        <li className='featured-item'>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn='animate__fadeIn'
+          animateOnce='true'
+          className='featured-item'
+        >
           <div className='project-content'>
             <div>
               <p className='project-overline'>Featured Project</p>
@@ -131,10 +159,20 @@ const Projects = () => {
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
-                <a href='#' target='blank'>
+                <a
+                  href='https://github.com/arichylton/power'
+                  target='_blank'
+                  data-tooltip-content='Github'
+                  data-tooltip-id='github-tooltip-project'
+                >
                   <img src={githubImg} />
                 </a>
-                <a href='#' target='blank'>
+                <a
+                  href='#'
+                  target='blank'
+                  data-tooltip-content='Website'
+                  data-tooltip-id='website-tooltip-project'
+                >
                   <img src={websiteImg} />
                 </a>
               </div>
@@ -145,8 +183,12 @@ const Projects = () => {
               <img src={powerImg} />
             </a>
           </div>
-        </li>
-        <li className='featured-item'>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn='animate__fadeIn'
+          animateOnce='true'
+          className='featured-item'
+        >
           <div className='project-content'>
             <div>
               <p className='project-overline'>Featured Project</p>
@@ -168,10 +210,20 @@ const Projects = () => {
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
-                <a href='#' target='blank'>
+                <a
+                  href='#'
+                  target='blank'
+                  data-tooltip-content='Github'
+                  data-tooltip-id='github-tooltip-project'
+                >
                   <img src={githubImg} />
                 </a>
-                <a href='#' target='blank'>
+                <a
+                  href='#'
+                  target='blank'
+                  data-tooltip-content='Website'
+                  data-tooltip-id='website-tooltip-project'
+                >
                   <img src={websiteImg} />
                 </a>
               </div>
@@ -182,7 +234,7 @@ const Projects = () => {
               <img src={weatherlyImg} />
             </a>
           </div>
-        </li>
+        </AnimationOnScroll>
       </ul>
     </section>
   );

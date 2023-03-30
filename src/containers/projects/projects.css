@@ -120,7 +120,6 @@
   transition: var(--transition);
   grid-area: 1 / 6 / -1 / -1;
   position: relative;
-  z-index: 1;
 }
 
 img,
@@ -185,12 +184,10 @@ svg,
 }
 
 .project-links a img:hover {
-  scale: 130%;
+  filter: invert(79%) sepia(42%) saturate(3360%) hue-rotate(180deg) brightness(155%) contrast(96%);
+  scale: 1.1;
 }
 
 .saigheadIMG {
-  height: 28 0px;
+  height: 30px 0px;
 }
-
-
-

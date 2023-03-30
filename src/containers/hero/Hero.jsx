@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './hero.css';
+import { Tooltip } from 'react-tooltip';
 
 import githubImg from '../../assets/icons/github-original.svg';
 import linkedinImg from '../../assets/icons/linkedin-original.svg';
@@ -27,18 +28,24 @@ const Top = () => {
       <div>
         <a
           className='contact-link'
-          href='!#'
+          href='https://github.com/arichylton'
           target='_blank'
           rel='noopener noreferrer'
+          data-tooltip-content='Github'
+          data-tooltip-id='github-tooltip'
         >
+          <Tooltip id='github-tooltip' place='bottom' />
           <img src={githubImg} />
         </a>
         <a
           className='contact-link'
-          href='!#'
+          href='https://www.linkedin.com/in/aric-hylton-8a3394177/'
           target='_blank'
           rel='noopener noreferrer'
+          data-tooltip-content='LinkedIn'
+          data-tooltip-id='linkedin-tooltip'
         >
+          <Tooltip id='linkedin-tooltip' place='bottom' />
           <img src={linkedinImg} />
         </a>
         {/* <a
@@ -46,7 +53,10 @@ const Top = () => {
           href='!#'
           target='_blank'
           rel='noopener noreferrer'
+          data-tooltip-content='Resume'
+          data-tooltip-id='resume-tooltip'
         >
+          <Tooltip id='resume-tooltip' />
           <img src={resumeImg} />
         </a> */}
       </div>
