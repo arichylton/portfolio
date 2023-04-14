@@ -5,7 +5,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import movielyImg from '../../assets/project-images/moviely.png';
 import powerImg from '../../assets/project-images/power.png';
-import weatherlyImg from '../../assets/project-images/weatherly.png';
+import spotifiImg from '../../assets/project-images/spotifi.png';
 import saigheadImg from '../../assets/project-images/saighead.jpg';
 
 import steamImg from '../../assets/icons/steam.svg';
@@ -58,7 +58,7 @@ const Projects = () => {
                   <img src={githubImg} />
                 </a>
                 <a
-                  href='https://ubiquitous-platypus-29d3a7.netlify.app/'
+                  href='https://moviely-app.netlify.app/'
                   target='blank'
                   data-tooltip-content='Website'
                   data-tooltip-id='website-tooltip-project'
@@ -73,11 +73,65 @@ const Projects = () => {
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
           >
-            <a
-              href='https://ubiquitous-platypus-29d3a7.netlify.app/'
-              target='blank'
-            >
+            <a href='https://moviely-app.netlify.app/' target='blank'>
               <img src={movielyImg} />
+            </a>
+          </div>
+        </AnimationOnScroll>
+        <AnimationOnScroll
+          animateIn='animate__fadeIn'
+          animateOnce='true'
+          className='featured-item'
+        >
+          <div className='project-content'>
+            <div>
+              <p className='project-overline'>Featured Project</p>
+              <h3 className='project-title'>
+                <a>Spotifi</a>
+              </h3>
+              <div className='project-description'>
+                <p>
+                  Moviely utilizes a movie database api to show upcoming movies,
+                  featured movies, and the highest rated movies of all time.
+                  Moviely also allows users to search for movies and see
+                  individual movie details.
+                </p>
+              </div>
+              <ul className='project-tech-list'>
+                <li>React</li>
+                <li>Javascript</li>
+                <li>Express</li>
+                <li>MovieDB API</li>
+                <li>Netlify</li>
+              </ul>
+              <div className='project-links'>
+                <a
+                  href='https://github.com/arichylton/spotifiApp'
+                  target='blank'
+                  data-tooltip-content='Github'
+                  data-tooltip-id='github-tooltip-project'
+                >
+                  <Tooltip id='github-tooltip-project' place='bottom' />
+                  <img src={githubImg} />
+                </a>
+                <a
+                  href='https://spotifi-app.herokuapp.com/'
+                  target='blank'
+                  data-tooltip-content='Website'
+                  data-tooltip-id='website-tooltip-project'
+                >
+                  <Tooltip id='website-tooltip-project' place='bottom' />
+                  <img src={websiteImg} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
+            style={{ maxWidth: 700, display: 'block' }}
+          >
+            <a href='https://spotifi-app.herokuapp.com/' target='blank'>
+              <img src={spotifiImg} />
             </a>
           </div>
         </AnimationOnScroll>
@@ -160,7 +214,7 @@ const Projects = () => {
               </ul>
               <div className='project-links'>
                 <a
-                  href='https://github.com/arichylton/power'
+                  href='https://github.com/arichylton/powerly'
                   target='_blank'
                   data-tooltip-content='Github'
                   data-tooltip-id='github-tooltip-project'
@@ -168,8 +222,8 @@ const Projects = () => {
                   <img src={githubImg} />
                 </a>
                 <a
-                  href='#'
-                  target='blank'
+                  href='https://power-app.netlify.app/'
+                  target='_blank'
                   data-tooltip-content='Website'
                   data-tooltip-id='website-tooltip-project'
                 >
@@ -179,59 +233,8 @@ const Projects = () => {
             </div>
           </div>
           <div className='project-image'>
-            <a target='blank'>
+            <a href='https://power-app.netlify.app/' target='blank'>
               <img src={powerImg} />
-            </a>
-          </div>
-        </AnimationOnScroll>
-        <AnimationOnScroll
-          animateIn='animate__fadeIn'
-          animateOnce='true'
-          className='featured-item'
-        >
-          <div className='project-content'>
-            <div>
-              <p className='project-overline'>Featured Project</p>
-              <h3 className='project-title'>
-                <a>Weatherly</a>
-              </h3>
-              <div className='project-description'>
-                <p>
-                  Weatherly was made using React and Redux. Utilizes the Dark
-                  Sky API to fetch weather data asynchronously based on a
-                  searched location in the United States.
-                </p>
-              </div>
-              <ul className='project-tech-list'>
-                <li>React</li>
-                <li>Javascript</li>
-                <li>Express</li>
-                <li>Dark Sky API</li>
-                <li>Netlify</li>
-              </ul>
-              <div className='project-links'>
-                <a
-                  href='#'
-                  target='blank'
-                  data-tooltip-content='Github'
-                  data-tooltip-id='github-tooltip-project'
-                >
-                  <img src={githubImg} />
-                </a>
-                <a
-                  href='#'
-                  target='blank'
-                  data-tooltip-content='Website'
-                  data-tooltip-id='website-tooltip-project'
-                >
-                  <img src={websiteImg} />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='project-image'>
-            <a target='blank'>
-              <img src={weatherlyImg} />
             </a>
           </div>
         </AnimationOnScroll>
