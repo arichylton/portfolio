@@ -91,18 +91,19 @@ const Projects = () => {
               </h3>
               <div className='project-description'>
                 <p>
-                  Moviely utilizes a movie database api to show upcoming movies,
-                  featured movies, and the highest rated movies of all time.
-                  Moviely also allows users to search for movies and see
-                  individual movie details.
+                  Spotifi incorporates a Client/Server project structure that
+                  allows users to authenticate through the Spotify API. The
+                  server maintains the access token and login functionality
+                  while the client uses React to render the User's data and look
+                  up specific things about their profile.
                 </p>
               </div>
               <ul className='project-tech-list'>
                 <li>React</li>
                 <li>Javascript</li>
                 <li>Express</li>
-                <li>MovieDB API</li>
-                <li>Netlify</li>
+                <li>Spotify API</li>
+                <li>Heroku</li>
               </ul>
               <div className='project-links'>
                 <a
@@ -115,7 +116,7 @@ const Projects = () => {
                   <img src={githubImg} />
                 </a>
                 <a
-                  href='https://spotifi-app.herokuapp.com/'
+                  href='https://arichylton-spotifi.herokuapp.com/'
                   target='blank'
                   data-tooltip-content='Website'
                   data-tooltip-id='website-tooltip-project'
@@ -130,7 +131,7 @@ const Projects = () => {
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
           >
-            <a href='https://spotifi-app.herokuapp.com/' target='blank'>
+            <a href='https://arichylton-spotifi.herokuapp.com/' target='blank'>
               <img src={spotifiImg} />
             </a>
           </div>
@@ -209,7 +210,7 @@ const Projects = () => {
                 <li>React</li>
                 <li>Javascript</li>
                 <li>Express</li>
-                <li>VSC</li>
+                <li>Firebase</li>
                 <li>Netlify</li>
               </ul>
               <div className='project-links'>
