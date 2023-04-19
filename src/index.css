@@ -57,6 +57,10 @@ a {
   transition: var(--transition);
 }
 
+a:hover {
+  color:#10ebfa
+}
+
 p {
   margin-top: 1rem;
 }

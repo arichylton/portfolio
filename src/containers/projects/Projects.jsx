@@ -32,7 +32,9 @@ const Projects = () => {
           >
             <p className='project-overline'>Featured Project</p>
             <h3 className='project-title'>
-              <a>Moviely</a>
+              <a href='https://github.com/arichylton/moviely' target='_blank'>
+                Moviely
+              </a>
             </h3>
             <div className='project-description'>
               <p>
@@ -91,7 +93,12 @@ const Projects = () => {
           >
             <p className='project-overline'>Featured Project</p>
             <h3 className='project-title'>
-              <a>Spotifi</a>
+              <a
+                href='https://arichylton-spotifi.herokuapp.com/'
+                target='_blank'
+              >
+                Spotifi
+              </a>
             </h3>
             <div className='project-description'>
               <p>
@@ -150,7 +157,12 @@ const Projects = () => {
           >
             <p className='project-overline'>Featured Project</p>
             <h3 className='project-title'>
-              <a>Saighead</a>
+              <a
+                href='https://store.steampowered.com/app/1576020/Saighead/'
+                target='_blank'
+              >
+                Saighead
+              </a>
             </h3>
             <div className='project-description'>
               <p>
@@ -197,15 +209,15 @@ const Projects = () => {
           animateOnce='true'
           className='featured-item'
         >
-          <a
+          <span
             className='project-content'
             style={{ backgroundImage: `url(${powerImg})` }}
-            href='https://power-app.netlify.app/'
-            target='_blank'
           >
             <p className='project-overline'>Featured Project</p>
             <h3 className='project-title'>
-              <a>Power</a>
+              <a href='https://power-app.netlify.app/' target='_blank'>
+                Power
+              </a>
             </h3>
             <div className='project-description'>
               <p>
@@ -240,7 +252,7 @@ const Projects = () => {
                 <img src={websiteImg} />
               </a>
             </div>
-          </a>
+          </span>
           <div className='project-image'>
             <a href='https://power-app.netlify.app/' target='blank'>
               <img src={powerImg} />
