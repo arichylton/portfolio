@@ -1,15 +1,15 @@
 :root {
-  --dark-navy: #1F1F20;
+  --dark-navy: #1f1f20;
   --navy: #171c28;
   --light-navy: rgb(34, 41, 59);
-  --lightest-navy: #606D80;
+  --lightest-navy: #606d80;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --dark-slate: #495670;
   --slate: #8892b0;
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
-  --green: #10EBFA;
+  --green: #10ebfa;
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
@@ -45,4 +45,18 @@
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 100%;
+}
+
+a {
+  color: var(--white);
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+p {
+  margin-top: 1rem;
 }

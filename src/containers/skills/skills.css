@@ -47,3 +47,36 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+@media (max-width: 991px) {
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skills__section {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills__section {
+    padding: 0 3%;
+  }
+
+  .skills__section {
+    margin-top: 100px;
+  }
+
+  
+
+  .skills__section-group {
+    margin-right: none;
+    min-width: 100%;
+  }
+
+  .skills__title {
+    margin-bottom: 50px;
+  }
+}

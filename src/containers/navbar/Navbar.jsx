@@ -21,13 +21,13 @@ const Navbar = () => {
 
   return (
     <header className='header'>
-      <nav className='navbar'>
+      <nav className='navbar-navz'>
         <div className='logo'>
           <a href='/' aria-label='home'>
             {nameText}
           </a>
         </div>
-        <ul className='navbar__items-container'>
+        <ul className='navbar__items-container' style={{marginBottom: 0}}>
           <li>
             <a href='/#about' className='navbar__items-container-link'>
               About
@@ -35,7 +35,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href='/#skills' className='navbar__items-container-link'>
-               Skills
+              Skills
             </a>
           </li>
           <li>

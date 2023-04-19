@@ -11,7 +11,9 @@ import {
 } from './containers';
 import './App.css';
 import 'animate.css';
+
 import 'react-tooltip/dist/react-tooltip.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   useEffect(() => {
@@ -20,7 +22,7 @@ const App = () => {
   return (
     <div className='App'>
       <Navbar />
-      <main className='fillheight'>
+      <main className='fillheight container'>
         <Top />
         <About />
         <Skills />

@@ -10,7 +10,6 @@ import gitImg from '../../assets/icons/git-original.svg';
 import javascriptImg from '../../assets/icons/javascript-original.svg';
 import nodejsImg from '../../assets/icons/nodejs-original.svg';
 import npmImg from '../../assets/icons/npm-original-wordmark.svg';
-import slackImg from '../../assets/icons/slack-original.svg';
 import goImg from '../../assets/icons/go-original.svg';
 import csharpImg from '../../assets/icons/csharp-line.svg';
 import unityImg from '../../assets/icons/unity-original.svg';
@@ -37,54 +36,52 @@ const Skills = () => {
         animateOnce='true'
       >
         <div className='skills__container'>
-          <div>
-            <div className='skills__section-group'>
-              <div>
-                <h2>Development</h2>
-              </div>
-              <div>
-                <img src={reactImg} />
-                <img src={javascriptImg} />
-                <img src={pythonImg} />
-                <img src={cssImg} />
-                <img src={htmlImg} />
-                <img src={nodejsImg} />
-                <img src={gitImg} />
-                <img src={npmImg} />
-                <img src={firebaseImg} />
-                <img src={goImg} />
-                <img src={csharpImg} />
-                <img src={mongodbImg} />
-                <img src={bootstrapImg} />
-                <img src={postgresSqlImg} />
-                <img src={unityImg} />
-              </div>
-            </div>
-
-            <div className='skills__section-group'>
-              <div>
-                <h2>Design</h2>
-              </div>
-              <div>
-                <p>Wireframing / UML</p>
-                <p>UI / UX Design</p>
-                <p>Adobe Photoshop</p>
-              </div>
-            </div>
-          </div>
           <div className='skills__section-group'>
             <div>
-              <h2>Tools</h2>
+              <h2>Development</h2>
+            </div>
+            <div className='skills__section-img-grid'>
+              <img src={reactImg} />
+              <img src={javascriptImg} />
+              <img src={pythonImg} />
+              <img src={cssImg} />
+              <img src={htmlImg} />
+              <img src={nodejsImg} />
+              <img src={gitImg} />
+              <img src={npmImg} />
+              <img src={firebaseImg} />
+              <img src={goImg} />
+              <img src={csharpImg} />
+              <img src={mongodbImg} />
+              <img src={bootstrapImg} />
+              <img src={postgresSqlImg} />
+              <img src={unityImg} />
+            </div>
+          </div>
+
+          <div className='skills__section-group'>
+            <div>
+              <h2>Design</h2>
             </div>
             <div>
-              <p>Git + Github</p>
-              <p>Command Line</p>
-              <p>Chrome DevTools</p>
-              <p>Slack</p>
-              <p>Visual Studio</p>
-              <p>Unity</p>
-              <p>Windows</p>
+              <p>Wireframing / UML</p>
+              <p>UI / UX Design</p>
+              <p>Adobe Photoshop</p>
             </div>
+          </div>
+        </div>
+        <div className='skills__section-group'>
+          <div>
+            <h2>Tools</h2>
+          </div>
+          <div>
+            <p>Git + Github</p>
+            <p>Command Line</p>
+            <p>Chrome DevTools</p>
+            <p>Slack</p>
+            <p>Visual Studio</p>
+            <p>Unity</p>
+            <p>Windows</p>
           </div>
         </div>
       </AnimationOnScroll>

@@ -14,7 +14,7 @@ import websiteImg from '../../assets/icons/website.svg';
 
 const Projects = () => {
   return (
-    <section id='projects' className='anchor'>
+    <section id='projects' className='anchor projects__section'>
       <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true'>
         <div className='projects__title'>
           <h1>Projects</h1>
@@ -26,49 +26,51 @@ const Projects = () => {
           animateOnce='true'
           className='featured-item'
         >
-          <div className='project-content'>
-            <div>
-              <p className='project-overline'>Featured Project</p>
-              <h3 className='project-title'>
-                <a>Moviely</a>
-              </h3>
-              <div className='project-description'>
-                <p>
-                  Moviely utilizes a movie database api to show upcoming movies,
-                  featured movies, and the highest rated movies of all time.
-                  Moviely also allows users to search for movies and see
-                  individual movie details.
-                </p>
-              </div>
-              <ul className='project-tech-list'>
-                <li>React</li>
-                <li>Javascript</li>
-                <li>Express</li>
-                <li>MovieDB API</li>
-                <li>Netlify</li>
-              </ul>
-              <div className='project-links'>
-                <a
-                  href='https://github.com/arichylton/moviely'
-                  target='blank'
-                  data-tooltip-content='Github'
-                  data-tooltip-id='github-tooltip-project'
-                >
-                  <Tooltip id='github-tooltip-project' place='bottom' />
-                  <img src={githubImg} />
-                </a>
-                <a
-                  href='https://moviely-app.netlify.app/'
-                  target='blank'
-                  data-tooltip-content='Website'
-                  data-tooltip-id='website-tooltip-project'
-                >
-                  <Tooltip id='website-tooltip-project' place='bottom' />
-                  <img src={websiteImg} />
-                </a>
-              </div>
+          <div
+            className='project-content'
+            style={{ backgroundImage: `url(${movielyImg})` }}
+          >
+            <p className='project-overline'>Featured Project</p>
+            <h3 className='project-title'>
+              <a>Moviely</a>
+            </h3>
+            <div className='project-description'>
+              <p>
+                Moviely utilizes a movie database api to show upcoming movies,
+                featured movies, and the highest rated movies of all time.
+                Moviely also allows users to search for movies and see
+                individual movie details.
+              </p>
+            </div>
+            <ul className='project-tech-list'>
+              <li>React</li>
+              <li>Javascript</li>
+              <li>Express</li>
+              <li>MovieDB API</li>
+              <li>Netlify</li>
+            </ul>
+            <div className='project-links'>
+              <a
+                href='https://github.com/arichylton/moviely'
+                target='blank'
+                data-tooltip-content='Github'
+                data-tooltip-id='github-tooltip-project'
+              >
+                <Tooltip id='github-tooltip-project' place='bottom' />
+                <img src={githubImg} />
+              </a>
+              <a
+                href='https://moviely-app.netlify.app/'
+                target='blank'
+                data-tooltip-content='Website'
+                data-tooltip-id='website-tooltip-project'
+              >
+                <Tooltip id='website-tooltip-project' place='bottom' />
+                <img src={websiteImg} />
+              </a>
             </div>
           </div>
+
           <div
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
@@ -83,48 +85,49 @@ const Projects = () => {
           animateOnce='true'
           className='featured-item'
         >
-          <div className='project-content'>
-            <div>
-              <p className='project-overline'>Featured Project</p>
-              <h3 className='project-title'>
-                <a>Spotifi</a>
-              </h3>
-              <div className='project-description'>
-                <p>
-                  Spotifi incorporates a Client/Server project structure that
-                  allows users to authenticate through the Spotify API. The
-                  server maintains the access token and login functionality
-                  while the client uses React to render the User's data and look
-                  up specific things about their profile.
-                </p>
-              </div>
-              <ul className='project-tech-list'>
-                <li>React</li>
-                <li>Javascript</li>
-                <li>Express</li>
-                <li>Spotify API</li>
-                <li>Heroku</li>
-              </ul>
-              <div className='project-links'>
-                <a
-                  href='https://github.com/arichylton/spotifiApp'
-                  target='blank'
-                  data-tooltip-content='Github'
-                  data-tooltip-id='github-tooltip-project'
-                >
-                  <Tooltip id='github-tooltip-project' place='bottom' />
-                  <img src={githubImg} />
-                </a>
-                <a
-                  href='https://arichylton-spotifi.herokuapp.com/'
-                  target='blank'
-                  data-tooltip-content='Website'
-                  data-tooltip-id='website-tooltip-project'
-                >
-                  <Tooltip id='website-tooltip-project' place='bottom' />
-                  <img src={websiteImg} />
-                </a>
-              </div>
+          <div
+            className='project-content'
+            style={{ backgroundImage: `url(${spotifiImg})` }}
+          >
+            <p className='project-overline'>Featured Project</p>
+            <h3 className='project-title'>
+              <a>Spotifi</a>
+            </h3>
+            <div className='project-description'>
+              <p>
+                Spotifi incorporates a Client/Server project structure that
+                allows users to authenticate through the Spotify API. The server
+                maintains the access token and login functionality while the
+                client uses React to render the User's data and look up specific
+                things about their profile.
+              </p>
+            </div>
+            <ul className='project-tech-list'>
+              <li>React</li>
+              <li>Javascript</li>
+              <li>Express</li>
+              <li>Spotify API</li>
+              <li>Heroku</li>
+            </ul>
+            <div className='project-links'>
+              <a
+                href='https://github.com/arichylton/spotifiApp'
+                target='blank'
+                data-tooltip-content='Github'
+                data-tooltip-id='github-tooltip-project'
+              >
+                <Tooltip id='github-tooltip-project' place='bottom' />
+                <img src={githubImg} />
+              </a>
+              <a
+                href='https://arichylton-spotifi.herokuapp.com/'
+                target='blank'
+                data-tooltip-content='Website'
+                data-tooltip-id='website-tooltip-project'
+              >
+                <Tooltip id='website-tooltip-project' place='bottom' />
+                <img src={websiteImg} />
+              </a>
             </div>
           </div>
           <div
@@ -141,40 +144,42 @@ const Projects = () => {
           animateOnce='true'
           className='featured-item'
         >
-          <div className='project-content'>
-            <div>
-              <p className='project-overline'>Featured Project</p>
-              <h3 className='project-title'>
-                <a>Saighead</a>
-              </h3>
-              <div className='project-description'>
-                <p>
-                  Saighead is 2D single-player puzzle game developed by my
-                  brother and I. It was developed with C# utilizing the Unity
-                  engine to create all 100 puzzles. I was in charge of the
-                  development, design and direction of the game.
-                </p>
-              </div>
-              <ul className='project-tech-list'>
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Adobe</li>
-                <li>Steam</li>
-                <li>Visual Studio</li>
-              </ul>
-              <div className='project-links'>
-                <a
-                  href='https://store.steampowered.com/app/1576020/Saighead/'
-                  target='blank'
-                  data-tooltip-content='Steam Webpage'
-                  data-tooltip-id='steam-tooltip-project'
-                >
-                  <Tooltip id='steam-tooltip-project' place='bottom' />
-                  <img src={steamImg} />
-                </a>
-              </div>
+          <div
+            className='project-content'
+            style={{ backgroundImage: `url(${saigheadImg})` }}
+          >
+            <p className='project-overline'>Featured Project</p>
+            <h3 className='project-title'>
+              <a>Saighead</a>
+            </h3>
+            <div className='project-description'>
+              <p>
+                Saighead is 2D single-player puzzle game developed by my brother
+                and I. It was developed with C# utilizing the Unity engine to
+                create all 100 puzzles. I was in charge of the development,
+                design and direction of the game.
+              </p>
+            </div>
+            <ul className='project-tech-list'>
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Adobe</li>
+              <li>Steam</li>
+              <li>Visual Studio</li>
+            </ul>
+            <div className='project-links'>
+              <a
+                href='https://store.steampowered.com/app/1576020/Saighead/'
+                target='blank'
+                data-tooltip-content='Steam Webpage'
+                data-tooltip-id='steam-tooltip-project'
+              >
+                <Tooltip id='steam-tooltip-project' place='bottom' />
+                <img src={steamImg} />
+              </a>
             </div>
           </div>
+
           <div
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
@@ -192,47 +197,50 @@ const Projects = () => {
           animateOnce='true'
           className='featured-item'
         >
-          <div className='project-content'>
-            <div>
-              <p className='project-overline'>Featured Project</p>
-              <h3 className='project-title'>
-                <a>Power</a>
-              </h3>
-              <div className='project-description'>
-                <p>
-                  Need to find out your current wilks score? Look no further!
-                  Power utilizes it's own api to allow users to track their
-                  wilks and fitness goals. Power was also built off of react and
-                  uses various components to make it look great.
-                </p>
-              </div>
-              <ul className='project-tech-list'>
-                <li>React</li>
-                <li>Javascript</li>
-                <li>Express</li>
-                <li>Firebase</li>
-                <li>Netlify</li>
-              </ul>
-              <div className='project-links'>
-                <a
-                  href='https://github.com/arichylton/powerly'
-                  target='_blank'
-                  data-tooltip-content='Github'
-                  data-tooltip-id='github-tooltip-project'
-                >
-                  <img src={githubImg} />
-                </a>
-                <a
-                  href='https://power-app.netlify.app/'
-                  target='_blank'
-                  data-tooltip-content='Website'
-                  data-tooltip-id='website-tooltip-project'
-                >
-                  <img src={websiteImg} />
-                </a>
-              </div>
+          <a
+            className='project-content'
+            style={{ backgroundImage: `url(${powerImg})` }}
+            href='https://power-app.netlify.app/'
+            target='_blank'
+          >
+            <p className='project-overline'>Featured Project</p>
+            <h3 className='project-title'>
+              <a>Power</a>
+            </h3>
+            <div className='project-description'>
+              <p>
+                Need to find out your current wilks score? Look no further!
+                Power utilizes it's own api to allow users to track their wilks
+                and fitness goals. Power was also built off of react and uses
+                various components to make it look great.
+              </p>
             </div>
-          </div>
+            <ul className='project-tech-list'>
+              <li>React</li>
+              <li>Javascript</li>
+              <li>Express</li>
+              <li>Firebase</li>
+              <li>Netlify</li>
+            </ul>
+            <div className='project-links'>
+              <a
+                href='https://github.com/arichylton/powerly'
+                target='_blank'
+                data-tooltip-content='Github'
+                data-tooltip-id='github-tooltip-project'
+              >
+                <img src={githubImg} />
+              </a>
+              <a
+                href='https://power-app.netlify.app/'
+                target='_blank'
+                data-tooltip-content='Website'
+                data-tooltip-id='website-tooltip-project'
+              >
+                <img src={websiteImg} />
+              </a>
+            </div>
+          </a>
           <div className='project-image'>
             <a href='https://power-app.netlify.app/' target='blank'>
               <img src={powerImg} />

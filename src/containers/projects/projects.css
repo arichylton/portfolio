@@ -44,12 +44,6 @@
   font-size: clamp(24px, 5vw, 28px);
 }
 
-@media (min-width: 768px) {
-  .featured-item .project-title {
-    margin: 0px 0px 20px;
-  }
-}
-
 .featured-item .project-description {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
@@ -177,6 +171,11 @@ svg,
   padding: 10px;
 }
 
+.project-content {
+  background-size: 0;
+  pointer-events: none;
+}
+
 .project-links a img {
   height: auto;
   width: 22px;
@@ -184,10 +183,90 @@ svg,
 }
 
 .project-links a img:hover {
-  filter: invert(79%) sepia(42%) saturate(3360%) hue-rotate(180deg) brightness(155%) contrast(96%);
+  filter: invert(79%) sepia(42%) saturate(3360%) hue-rotate(180deg)
+    brightness(155%) contrast(96%);
   scale: 1.1;
 }
 
 .saigheadIMG {
   height: 30px 0px;
+}
+
+@media (max-width: 991px) {
+  .featured-item:nth-of-type(2n + 1) .project-links {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin-left: -10px;
+  }
+
+  .featured-item:nth-of-type(2n + 1) .project-tech-list li {
+    margin: 0px 16px 10px 0px;
+  }
+  .featured-item:nth-of-type(2n + 1) .project-tech-list {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+
+  .featured-item:nth-of-type(2n + 1) .project-content {
+    text-align: left;
+  }
+
+  .featured-item {
+    position: relative;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .featured-item:not(:last-of-type) {
+    margin-bottom: 80px;
+  }
+
+  .project-content {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    pointer-events: all;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    background-color: rgb(27, 34, 51);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    background-blend-mode: darken;
+  }
+
+  .project-content:hover {
+    cursor: pointer;
+    pointer-events: all;
+    background-color: rgb(48, 56, 76);
+  }
+
+  .featured-item .project-description {
+    box-shadow: none;
+    position: relative;
+    padding: 0px;
+    background-color: #0000;
+  }
+
+  .featured-item .project-tech-list li {
+    margin: 0px 16px 10px 0px;
+  }
+
+  .featured-item .project-image img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects__section {
+    padding: 0 3%;
+  }
+
+  .projects__title {
+    margin-top: 100px;
+  }
 }
