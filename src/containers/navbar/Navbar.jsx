@@ -4,8 +4,8 @@ import './navbar.css';
 import resume from '../../assets/resume/AricHylton_Resume.pdf';
 
 const Navbar = () => {
-  const [nameText, setNameText] = useState('Aric Hylton');
-  const [show, setShow] = useState(true);
+  const [nameText, setNameText] = useState('AH');
+  const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [checked, setChecked] = useState(false);
 
@@ -56,22 +56,39 @@ const Navbar = () => {
     <header className={`header ${show && 'hidden'}`}>
       <nav className='navbar-navz'>
         <div className='logo'>
-          <a href='/#' aria-label='home' onClick={() => {
-            setLastScrollY(0);
-          }}>
+          <a
+            href='/#'
+            aria-label='home'
+          >
             {nameText}
           </a>
         </div>
 
         <ul className='navbar__items-container' style={{ marginBottom: 0 }}>
-          <input type='checkbox' id='checkbox_toggle' checked={checked} readOnly={true}/>
-          <label
-            htmlFor='checkbox_toggle'
-            className='hamburger'
-            onClick={changeChecked}
-          >
-            &#9776;
-          </label>
+          <input
+            type='checkbox'
+            id='checkbox_toggle'
+            checked={checked}
+            readOnly={true}
+          />
+          {!checked ? (
+            <label
+              htmlFor='checkbox_toggle'
+              className='hamburger'
+              onClick={changeChecked}
+            >
+              &#9776;
+            </label>
+          ) : (
+            <label
+              htmlFor='checkbox_toggle'
+              className='hamburger'
+              onClick={changeChecked}
+            >
+              &#9932;
+            </label>
+          )}
+
           <div className='menu'>
             <li>
               <a
