@@ -61,13 +61,13 @@
 }
 
 @media (max-width: 650px) {
-  .skills__section {
-    padding: 0 3%;
-  }
+.skills__section {
+  padding: 0 3%;
+}
 
-  .skills__section {
-    margin-top: 100px;
-  }
+.skills__section {
+  margin-top: 100px;
+}
 
   
 

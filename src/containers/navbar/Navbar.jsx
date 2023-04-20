@@ -1,10 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 
-import resume from '../../assets/resume/AricHylton_Resume.pdf'
+import resume from '../../assets/resume/AricHylton_Resume.pdf';
 
 const Navbar = () => {
   const [nameText, setNameText] = useState('Aric Hylton');
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [checked, setChecked] = useState(false);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY < lastScrollY || window.scrollY == 0) {
+        // if scroll down hide the navbar
+        setShow(false);
+      } else {
+        // if scroll up show the navbar
+        setShow(true);
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener('scroll', changeBackground, true);
@@ -19,40 +48,73 @@ const Navbar = () => {
     }
   };
 
+  const changeChecked = () => {
+    setChecked(!checked);
+  }
+
   return (
-    <header className='header'>
+    <header className={`header ${show && 'hidden'}`}>
       <nav className='navbar-navz'>
         <div className='logo'>
-          <a href='/' aria-label='home'>
+          <a href='/#' aria-label='home' onClick={() => {
+            setLastScrollY(0);
+          }}>
             {nameText}
           </a>
         </div>
-        <ul className='navbar__items-container' style={{marginBottom: 0}}>
-          <li>
-            <a href='/#about' className='navbar__items-container-link'>
-              About
-            </a>
-          </li>
-          <li>
-            <a href='/#skills' className='navbar__items-container-link'>
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href='/#projects' className='navbar__items-container-link'>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href='/#contact' className='navbar__items-container-link'>
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href={resume} className='resume-link' target='_blank'>
-              Resume
-            </a>
-          </li>
+
+        <ul className='navbar__items-container' style={{ marginBottom: 0 }}>
+          <input type='checkbox' id='checkbox_toggle' checked={checked} readOnly={true}/>
+          <label
+            htmlFor='checkbox_toggle'
+            className='hamburger'
+            onClick={changeChecked}
+          >
+            &#9776;
+          </label>
+          <div className='menu'>
+            <li>
+              <a
+                href='/#about'
+                className='navbar__items-container-link'
+                onClick={changeChecked}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href='/#skills'
+                className='navbar__items-container-link'
+                onClick={changeChecked}
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href='/#projects'
+                className='navbar__items-container-link'
+                onClick={changeChecked}
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href='/#contact'
+                className='navbar__items-container-link'
+                onClick={changeChecked}
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href={resume} className='resume-link' target='_blank'>
+                Resume
+              </a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
