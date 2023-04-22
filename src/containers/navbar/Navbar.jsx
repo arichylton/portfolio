@@ -8,10 +8,11 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [checked, setChecked] = useState(false);
+  const [topOfPage, setTopOfPage] = useState(100);
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
-      if (window.scrollY < lastScrollY || window.scrollY == 0) {
+      if (window.scrollY < lastScrollY) {
         // if scroll down hide the navbar
         setShow(false);
       } else {
@@ -41,6 +42,9 @@ const Navbar = () => {
   }, []);
 
   const changeBackground = () => {
+    if (window.scrollY == 0) {
+      setTopOfPage(100);
+    } else setTopOfPage(70);
     if (window.scrollY >= 600) {
       setNameText('Aric Hylton');
     } else {
@@ -50,16 +54,13 @@ const Navbar = () => {
 
   const changeChecked = () => {
     setChecked(!checked);
-  }
+  };
 
   return (
-    <header className={`header ${show && 'hidden'}`}>
+    <header className={`header ${show && 'hidden'} ${topOfPage != 100 && 'shadowed'}`} style={{height: topOfPage}}>
       <nav className='navbar-navz'>
         <div className='logo'>
-          <a
-            href='/#'
-            aria-label='home'
-          >
+          <a href='/#' aria-label='home'>
             {nameText}
           </a>
         </div>

@@ -241,7 +241,6 @@ svg,
   }
 
   .project-content:hover {
-    cursor: pointer;
     pointer-events: all;
     background-color: rgb(48, 56, 76);
   }

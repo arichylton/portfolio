@@ -34,7 +34,9 @@ const Contact = () => {
             href='mailto: Arich212@gmail.com'
             rel='noopener noreferrer'
             target='_blank'
+            
           >
+            
             Connect
           </a>
         </div>

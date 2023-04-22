@@ -5,7 +5,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import movielyImg from '../../assets/project-images/moviely.png';
 import powerImg from '../../assets/project-images/power.png';
-import spotifiImg from '../../assets/project-images/spotifi.png';
+import playifyImg from '../../assets/project-images/playify.png';
 import saigheadImg from '../../assets/project-images/saighead.jpg';
 
 import steamImg from '../../assets/icons/steam.svg';
@@ -89,24 +89,21 @@ const Projects = () => {
         >
           <div
             className='project-content'
-            style={{ backgroundImage: `url(${spotifiImg})` }}
+            style={{ backgroundImage: `url(${playifyImg})` }}
           >
             <p className='project-overline'>Featured Project</p>
             <h3 className='project-title'>
-              <a
-                href='https://arichylton-spotifi.herokuapp.com/'
-                target='_blank'
-              >
-                Spotifi
+              <a href='https://playify-app.herokuapp.com/' target='_blank'>
+                Playify
               </a>
             </h3>
             <div className='project-description'>
               <p>
-                Spotifi incorporates a Client/Server project structure that
+                Playify incorporates a Client/Server project structure that
                 allows users to authenticate through the Spotify API. The server
                 maintains the access token and login functionality while the
-                client uses React to render the User's data and look up specific
-                things about their profile.
+                client uses React to render the user's spotify data and look up
+                specific information about their profile.
               </p>
             </div>
             <ul className='project-tech-list'>
@@ -127,7 +124,7 @@ const Projects = () => {
                 <img src={githubImg} />
               </a>
               <a
-                href='https://arichylton-spotifi.herokuapp.com/'
+                href='https://playify-app.herokuapp.com/'
                 target='blank'
                 data-tooltip-content='Website'
                 data-tooltip-id='website-tooltip-project'
@@ -141,8 +138,8 @@ const Projects = () => {
             className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
             style={{ maxWidth: 700, display: 'block' }}
           >
-            <a href='https://arichylton-spotifi.herokuapp.com/' target='blank'>
-              <img src={spotifiImg} />
+            <a href='https://playify-app.herokuapp.com/' target='blank'>
+              <img src={playifyImg} />
             </a>
           </div>
         </AnimationOnScroll>
@@ -222,9 +219,10 @@ const Projects = () => {
             <div className='project-description'>
               <p>
                 Need to find out your current wilks score? Look no further!
-                Power utilizes it's own api to allow users to track their wilks
-                and fitness goals. Power was also built off of react and uses
-                various components to make it look great.
+                Power utilizes firebase for its authentication through google
+                along with managing and storing a user's personalized wilks
+                data. Power was also built off of react and uses various
+                components to make it look great.
               </p>
             </div>
             <ul className='project-tech-list'>

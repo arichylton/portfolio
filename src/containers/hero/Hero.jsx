@@ -48,17 +48,7 @@ const Top = () => {
           <Tooltip id='linkedin-tooltip' place='bottom' />
           <img src={linkedinImg} />
         </a>
-        {/* <a
-          className='contact-link'
-          href='!#'
-          target='_blank'
-          rel='noopener noreferrer'
-          data-tooltip-content='Resume'
-          data-tooltip-id='resume-tooltip'
-        >
-          <Tooltip id='resume-tooltip' />
-          <img src={resumeImg} />
-        </a> */}
+
       </div>
     </section>
   );
