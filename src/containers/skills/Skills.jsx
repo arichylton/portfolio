@@ -50,11 +50,11 @@ const Skills = () => {
               <img src={gitImg} />
               <img src={npmImg} />
               <img src={firebaseImg} />
-              <img src={goImg} />
+              {/* <img src={goImg} /> */}
               <img src={csharpImg} />
               <img src={mongodbImg} />
               <img src={bootstrapImg} />
-              <img src={postgresSqlImg} />
+              {/* <img src={postgresSqlImg} /> */}
               <img src={unityImg} />
             </div>
           </div>

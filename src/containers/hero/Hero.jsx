@@ -16,13 +16,11 @@ const Top = () => {
         <h2 className='big-heading'>Aric Hylton.</h2>
       </div>
       <div>
-        <h3 className='big-heading'>Software Developer.</h3>
+        <h3 className='big-heading'>Software Engineer.</h3>
       </div>
       <div>
         <p>
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at Upstatement.
+          I build solid and scalable web applications with great user experiences.
         </p>
       </div>
       <div>
