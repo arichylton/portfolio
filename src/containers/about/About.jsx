@@ -27,16 +27,16 @@ const About = () => {
                 at Full Sail University to recieve a Bachelor's in Computer
                 Science at the end of 2023.
               </span>
-              <span>
+              <p>
                 My main programming experience is with{' '}
-                <span style={{ color: 'rgb(16, 234, 250)' }}>
-                JavaScript, React, Python, C#, HTML, CSS, and Node.js.
-                </span>
-                {' '}I'm constantly keeping up to date with new documentation and
+                <p style={{ color: 'rgb(16, 234, 250)' }}>
+                React, JavaScript, Python, C#, HTML, CSS, and Node.js.
+                </p>{' '}
+                I'm constantly keeping up to date with new documentation and
                 enhancing my knowledge of current programming concepts. It's
                 important for me to be the best at what I do and strive to be
                 the hardest working developer that I can be.
-              </span>
+              </p>
               <span>
                 A few of my other hobbies are powerlifting, rock-climbing, and
                 pretty much anything outdoors. I like seeing a goal, mapping out
