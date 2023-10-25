@@ -7,6 +7,7 @@ import movielyImg from '../../assets/project-images/moviely.png';
 import powerImg from '../../assets/project-images/power.png';
 import playifyImg from '../../assets/project-images/playify.png';
 import saigheadImg from '../../assets/project-images/saighead.jpg';
+import swiftshopImg from '../../assets/project-images/swiftshop_image.png';
 
 import steamImg from '../../assets/icons/steam.svg';
 import githubImg from '../../assets/icons/github-original-link.svg';
@@ -21,6 +22,67 @@ const Projects = () => {
         </div>
       </AnimationOnScroll>
       <ul className='projects__featured-list'>
+        <AnimationOnScroll
+          animateIn='animate__fadeIn'
+          animateOnce='true'
+          className='featured-item'
+        >
+          <div
+            className='project-content'
+            style={{ backgroundImage: `url(${swiftshopImg})` }}
+          >
+            <p className='project-overline'>Featured Project</p>
+            <h3 className='project-title'>
+              <a href='https://github.com/arichylton/swiftshop' target='_blank'>
+                Swiftshop
+              </a>
+            </h3>
+            <div className='project-description'>
+              <p>
+                Swiftshop is my Computer Science capstone project. It's an
+                e-commerce clothing store that allows users to authenticate
+                through firebase, sort through various fashion categories, leave
+                product reviews, and checkout using Stripe payment.
+              </p>
+            </div>
+            <ul className='project-tech-list'>
+              <li>React</li>
+              <li>Javascript</li>
+              <li>Firebase</li>
+              <li>Stripe</li>
+              <li>Netlify</li>
+            </ul>
+            <div className='project-links'>
+              <a
+                href='https://github.com/arichylton/swiftshop'
+                target='blank'
+                data-tooltip-content='Github'
+                data-tooltip-id='github-tooltip-project'
+              >
+                <Tooltip id='github-tooltip-project' place='bottom' />
+                <img src={githubImg} />
+              </a>
+              <a
+                href='https://swiftshop-arichylton.netlify.app/'
+                target='blank'
+                data-tooltip-content='Website'
+                data-tooltip-id='website-tooltip-project'
+              >
+                <Tooltip id='website-tooltip-project' place='bottom' />
+                <img src={websiteImg} />
+              </a>
+            </div>
+          </div>
+
+          <div
+            className='project-image gatsby-image-wrapper-constrained gatsby-image-wrapper'
+            style={{ maxWidth: 700, display: 'block' }}
+          >
+            <a href='https://swiftshop-arichylton.netlify.app/' target='blank'>
+              <img src={swiftshopImg} />
+            </a>
+          </div>
+        </AnimationOnScroll>
         <AnimationOnScroll
           animateIn='animate__fadeIn'
           animateOnce='true'
