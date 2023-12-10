@@ -3,7 +3,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import './about.css';
 
-import personalPhoto from '../../assets/project-images/personal_photo.jpeg';
+import personalPhoto from '../../assets/project-images/personal_photo.jpg';
 
 const About = () => {
   return (
