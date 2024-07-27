@@ -22,20 +22,19 @@ const About = () => {
               <span>
                 Hey 👋🏼 my name is{' '}
                 <span style={{ color: 'rgb(16, 234, 250)' }}>Aric Hylton</span>{' '}
-                and I have been working with computers my entire life. I have
-                been interested in coding since high school and I'm now enrolled
-                at Full Sail University to recieve a Bachelor's in Computer
-                Science at the end of 2023.
+                and I have now been programming for the last six years. I have recently graduated, at the end of 2023, from Full Sail University with a Bachelor's degree in Computer
+                Science.
               </span>
               <p>
                 My main programming experience is with{' '}
                 <p style={{ color: 'rgb(16, 234, 250)' }}>
-                React, JavaScript, Python, C#, HTML, CSS, and Node.js.
+                  React, TypeScript, NextJs, TailwindCSS, Python, and
+                  Node.js.
                 </p>{' '}
                 I'm constantly keeping up to date with new documentation and
                 enhancing my knowledge of current programming concepts. It's
-                important for me to be the best at what I do and strive to be
-                the hardest working developer that I can be.
+                important for me to be the best at what I do and I'm highly
+                motivated to keep improving.
               </p>
               <span>
                 A few of my other hobbies are powerlifting, rock-climbing, and

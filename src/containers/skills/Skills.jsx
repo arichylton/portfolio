@@ -16,6 +16,7 @@ import unityImg from '../../assets/icons/unity-original.svg';
 import mongodbImg from '../../assets/icons/mongodb-original.svg';
 import firebaseImg from '../../assets/icons/firebase-plain.svg';
 import postgresSqlImg from '../../assets/icons/postgresql-original.svg';
+import nextjsImg from '../../assets/icons/nextjs.svg';
 import bootstrapImg from '../../assets/icons/bootstrap-original.svg';
 
 const Skills = () => {
@@ -42,20 +43,24 @@ const Skills = () => {
             </div>
             <div className='skills__section-img-grid'>
               <img src={reactImg} />
-              <img src={javascriptImg} />
+
+              <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' />
+
+              <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg' />
+              <img src={nodejsImg} />
               <img src={pythonImg} />
               <img src={cssImg} />
               <img src={htmlImg} />
-              <img src={nodejsImg} />
-              <img src={gitImg} />
-              <img src={npmImg} />
               <img src={firebaseImg} />
-              {/* <img src={goImg} /> */}
-              <img src={csharpImg} />
-              <img src={mongodbImg} />
+              <img src={postgresSqlImg} />
+              <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' />
               <img src={bootstrapImg} />
-              {/* <img src={postgresSqlImg} /> */}
-              <img src={unityImg} />
+
+              <img src={gitImg} />
+              <img src={csharpImg} />
+              <img src={npmImg} />
+
+              {/* <img src={goImg} /> */}
             </div>
           </div>
 

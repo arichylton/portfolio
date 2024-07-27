@@ -57,7 +57,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <p>Made with ❤️ by Aric Hylton @ 2023</p>
+      <p>Made with ❤️ by Aric Hylton @ 2024</p>
     </AnimationOnScroll>
   );
 };
