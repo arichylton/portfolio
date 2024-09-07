@@ -15,7 +15,14 @@ const Contact = () => {
             >
               👉
             </AnimationOnScroll>
+            <a
+              href='mailto: Arich212@gmail.com'
+              rel='noopener noreferrer'
+              target='_blank'
+
+            >
             Get In Touch
+            </a>
             <AnimationOnScroll
               animateIn='animate__slideInRight'
               duration='.9'
