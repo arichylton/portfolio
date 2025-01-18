@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React from "react";
+import { useEffect } from "react";
 import {
   Navbar,
   Top,
@@ -8,21 +8,21 @@ import {
   About,
   Contact,
   Footer,
-} from './containers';
-import './App.css';
-import 'animate.css';
+} from "./containers";
+import "./App.css";
+import "animate.css";
 
-import 'react-tooltip/dist/react-tooltip.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-tooltip/dist/react-tooltip.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   useEffect(() => {
-    window.history.scrollRestoration = 'manual';
+    window.history.scrollRestoration = "manual";
   }, []);
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
-      <main className='fillheight container'>
+      <main className="fillheight container">
         <Top />
         <About />
         <Skills />
@@ -32,7 +32,6 @@ const App = () => {
       </main>
     </div>
   );
-}
-
+};
 
 export default App;
