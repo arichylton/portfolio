@@ -46,10 +46,10 @@ const Skills = () => {
 
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
 
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
-              <img src={nodejsImg} />
-              <img src={pythonImg} />
               <img src={goImg} />
+              <img src={nodejsImg} />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+              <img src={pythonImg} />
 
               <img src={cssImg} />
               <img src={htmlImg} />
