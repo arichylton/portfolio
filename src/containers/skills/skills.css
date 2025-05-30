@@ -1,5 +1,6 @@
 .skills__section {
   min-height: 66vh;
+  padding-bottom: 5%;
 }
 
 .skills__section-group {
@@ -8,7 +9,7 @@
   min-width: 500px;
 }
 
-.skills__section-group > div > h2 {
+.skills__section-group>div>h2 {
   margin-bottom: 30px;
 }
 
@@ -61,15 +62,15 @@
 }
 
 @media (max-width: 650px) {
-.skills__section {
-  padding: 0 3%;
-}
+  .skills__section {
+    padding: 0 3%;
+  }
 
-.skills__section {
-  margin-top: 100px;
-}
+  .skills__section {
+    margin-top: 100px;
+  }
 
-  
+
 
   .skills__section-group {
     margin-right: none;
