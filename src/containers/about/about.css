@@ -1,5 +1,6 @@
 .about__section {
-  min-height: 55vh;
+  min-height: 66vh;
+  margin-bottom: 50px;
 }
 
 .about__section-group {
@@ -19,9 +20,12 @@
 }
 
 .about__me-section-pic {
-  --s: 15px; /* size of the frame */
-  --b: 1px; /* border thickness */
-  --w: 260px; /* width of the image */
+  --s: 15px;
+  /* size of the frame */
+  --b: 1px;
+  /* border thickness */
+  --w: 260px;
+  /* width of the image */
   --c: rgb(16, 234, 250);
 
   width: var(--w);
@@ -74,6 +78,7 @@
     text-align: center;
     margin-bottom: 50px;
   }
+
   .about__title:after {
     float: none;
     margin: 18px auto 0;
@@ -83,8 +88,9 @@
 
   .about__container {
     flex-direction: column-reverse;
-    
+
   }
+
   .about__container img {
     width: 260px;
     margin-bottom: 30px;
